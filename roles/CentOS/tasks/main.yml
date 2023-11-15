@@ -9,6 +9,7 @@
       state: latest
       use_backend: dnf4
 
+
   - name: Add Elasticsearch RPM repository
     shell: rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
 
