@@ -1,5 +1,5 @@
 ---
-# INSTALL NAGIOS
+
   - name: install nagios for Ubuntu
     apt:
       name:
@@ -7,7 +7,6 @@
         - nagios-plugins
       state: latest
 
-# INSTALL ELSTACK
   - name: Install necessary prerequisites
     apt:
       name:
@@ -44,7 +43,6 @@
       name: logstash
       state: latest
 
-# INSTALL Lampstack
   - name: install apache2 and php packages for Ubuntu
     apt:
       name:
@@ -63,7 +61,6 @@
       state: restarted
       enabled: true
 
-# install PROMETHEUS
   - name: Install Prometheus for Ubuntu
     apt:
       name: prometheus
@@ -75,7 +72,6 @@
       state: restarted
       enabled: true
 
-# install GRAFANA
   - name: Install dependencies
     apt:
       name:
@@ -107,7 +103,6 @@
       state: started
       enabled: yes
 
-#INSTALL INFLUXDB
   - name: Installing dependencies
     apt:
       name:
